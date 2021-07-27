@@ -1,0 +1,40 @@
+@use '../utils' as *;
+
+// Text/* Tắt margin default để mình dễ control margin theo design hơn */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Chỉ cho phép textarea được kéo dãn theo chiều dọc, trông sẽ đẹp hơn, không làm xấu layout */
+textarea {
+  resize: vertical;
+}
+
+/* Xóa bỏ khoảng trắng thừa dưới image */
+img {
+  vertical-align: middle;
+}
+
+/* Cũng để dễ control theo design, nên mình thường reset luôn ul, ol */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Tạo hiệu ứng bôi đen text khác biệt hơn mặc định */
+::selection {
+  background: #0031a2;
+  color: #fff;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
