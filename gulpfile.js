@@ -7,7 +7,7 @@ const cssnano = require("cssnano");
 const babel = require("gulp-babel");
 const terser = require("gulp-terser");
 const browsersync = require("browser-sync").create();
-
+// https://www.toptal.com/javascript/optimize-js-and-css-with-gulp
 // Use dart-sass for @use
 //sass.compiler = require('dart-sass');
 
