@@ -4,3 +4,10 @@
 @function rem($pixels, $context: 16) {
   @return (math.div($pixels, $context)) * 1rem;
 }
+
+
+
+//lnb-or-t=((fn * ln)-fn)/2
+@function mb($distance, $ln1,$fn1, ln2,$fn2) {
+  @return ( $distance - (math.div((($ln1 * $fn1) - $fn1),2)) - (math.div((($ln2 * $fn2) - $fn2),2))) * 1rem;
+}
