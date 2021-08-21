@@ -6,7 +6,7 @@
 }
 
 @function ln($ln, $fn) {
-  @return (math.div($ln, $fn)) * 1em;
+  @return (math.div($ln, $fn));
 }
 
 @function mb($distance, $ln1, $fn1, $ln2, $fn2) {
@@ -19,5 +19,5 @@
 }
 
 @function letter($target) {
-  @return ($target / 1000) * 1em;
+  @return ($target / 1000);
 }
