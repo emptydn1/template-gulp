@@ -5,9 +5,19 @@
   @return (math.div($pixels, $context)) * 1rem;
 }
 
+@function ln($ln, $fn) {
+  @return (math.div($ln, $fn)) * 1em;
+}
 
+@function mb($distance, $ln1, $fn1, $ln2, $fn2) {
+  @return (
+      math.div(
+        ($distance - ($ln1 * $fn1 - $fn1)/ 2 - ($ln2 * $fn2 - $fn2)/ 2),
+        16
+      )
+    ) * 1rem;
+}
 
-//lnb-or-t=((fn * ln)-fn)/2
-@function mb($distance, $ln1,$fn1, ln2,$fn2) {
-  @return ( $distance - (math.div((($ln1 * $fn1) - $fn1),2)) - (math.div((($ln2 * $fn2) - $fn2),2))) * 1rem;
+@function letter($target) {
+  @return ($target / 1000) * 1em;
 }
