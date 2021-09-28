@@ -21,3 +21,7 @@
 @function letter($target) {
   @return ($target / 1000);
 }
+
+@function percent($x) {
+  @return math.percentage(math.div($x, 16));
+}
