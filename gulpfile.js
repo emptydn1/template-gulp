@@ -27,6 +27,7 @@ function jsTask() {
     .pipe(dest("dist", { sourcemaps: "." }));
 }
 
+
 // Browsersync
 function browserSyncServe(cb) {
   browsersync.init({
@@ -42,6 +43,8 @@ function browserSyncServe(cb) {
   });
   cb();
 }
+
+
 function browserSyncReload(cb) {
   browsersync.reload();
   cb();
