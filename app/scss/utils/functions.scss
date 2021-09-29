@@ -27,3 +27,35 @@
 @function percent($x) {
   @return math.percentage(math.div($x, 16));
 }
+
+
+
+
+// @use "sass:math";
+
+// // Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
+// @function rem($pixels, $context: 16) {
+//   @return (math.div($pixels, $context)) * 1rem;
+// }
+
+// @function ln($ln, $fn) {
+//   @return (math.div($ln, $fn));
+// }
+
+// @function mb($distance, $ln1, $fn1, $ln2, $fn2) {
+//   @return (
+//       math.div(
+//         $distance - math.div($ln1 * $fn1 - $fn1, 2) -
+//           math.div($ln2 * $fn2 - $fn2, 2),
+//         16
+//       )
+//     ) * 1rem;
+// }
+
+// @function letter($target) {
+//   @return (math.div($target, 1000)) * 1px;
+// }
+
+// @function percent($x) {
+//   @return math.percentage(math.div($x, 16));
+// }
