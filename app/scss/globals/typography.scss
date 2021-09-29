@@ -11,6 +11,9 @@ p {
   margin: 0;
 }
 
+section[id] {
+  scroll-margin-top: rem(30);
+}
 
 /* Chỉ cho phép textarea được kéo dãn theo chiều dọc, trông sẽ đẹp hơn, không làm xấu layout */
 textarea {
