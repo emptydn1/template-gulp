@@ -18,8 +18,10 @@
     ) * 1rem;
 }
 
+
+//va
 @function letter($target) {
-  @return ($target / 1000);
+  @return ($target / 1000) * 1em;
 }
 
 @function percent($x) {
