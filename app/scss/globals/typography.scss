@@ -15,6 +15,14 @@ section[id] {
   scroll-margin-top: rem(30);
 }
 
+input,
+button,
+textarea,
+select {
+  outline: none;
+  border: 0;
+}
+
 /* Chỉ cho phép textarea được kéo dãn theo chiều dọc, trông sẽ đẹp hơn, không làm xấu layout */
 textarea {
   resize: vertical;
