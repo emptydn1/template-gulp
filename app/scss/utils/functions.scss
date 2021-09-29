@@ -21,7 +21,7 @@
 
 //va
 @function letter($target) {
-  @return ($target / 1000) * 1em;
+  @return ($target / 1000) * 1px;
 }
 
 @function percent($x) {
