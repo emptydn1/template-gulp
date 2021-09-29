@@ -3,6 +3,8 @@
 *::before {
   background-repeat: no-repeat;
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -27,8 +29,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
 }
 
 //matrix(a) * font-size = font-size
