@@ -66,7 +66,7 @@ exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
 
 
 
-
+// build css "OR" scss
 // // Initialize modules
 // const { src, dest, watch, series, parallel } = require("gulp");
 // const sass = require("gulp-sass")(require("sass"));
